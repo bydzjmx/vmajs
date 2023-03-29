@@ -1,55 +1,35 @@
 {
-  "private": true,
-  "workspaces": [
-    "packages/*"
+  "name": "@tookit/vma",
+  "version": "0.6.9",
+  "description": "Common components created by vuetifyjs",
+  "keywords": [
+    "material components",
+    "material design cascader",
+    "vuetify form builder",
+    "vuetify components",
+    "vuetify cascader",
+    "vuetify form builder"
   ],
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/tookit/vmajs"
+  "author": "michaelwang <wangqiangshen@gmail.com>",
+  "homepage": "https://github.com/tookit/vmajs",
+  "license": "ISC",
+  "main": "lib/vma.js",
+  "directories": {
+    "lib": "lib",
+    "test": "vma/__tests__"
   },
-  "author": "Michael Wang",
-  "bugs": {
-    "url": "https://github.com/tookit/vmajs/issues"
+  "files": [
+    "lib"
+  ],
+  "publishConfig": {
+    "access": "public"
   },
-  "license": "MIT",
   "scripts": {
-    "bootstrap": "lerna bootstrap",
-    "docs:deploy": "npx lerna run docs:deploy --scope vma.org --stream",
-    "docs:dev": "npx lerna run docs:dev --scope vma.org --stream",
-    "docs:build": "npx lerna run docs:build --scope vma.org --stream",
-    "preview": "npx lerna run serve --scope vma --stream",
-    "test": "npm run test:common && npm run test:server && npm run test:ui",
-    "build:lib": "lerna run build:lib --scope vma-lib",
-    "publish": "lerna publish"
-  },
-  "devDependencies": {
-    "@vue/cli-plugin-babel": "^4.5.10",
-    "@vue/cli-plugin-eslint": "^4.5.10",
-    "@vue/cli-plugin-unit-jest": "^4.5.10",
-    "@vue/cli-service": "^4.5.10",
-    "@vue/eslint-config-prettier": "^6.0.0",
-    "@vue/test-utils": "1.1.2",
-    "babel-eslint": "^10.0.3",
-    "concurrently": "^3.6.0",
-    "core-js": "^3.8.2",
-    "eslint": "^7.18.0",
-    "eslint-plugin-prettier": "^3.3.1",
-    "eslint-plugin-vue": "^7.4.1",
-    "lerna": "^4.0.0",
-    "lint-staged": "^10.5.3",
-    "prettier": "^2.2.1",
-    "release-it": "^14.4.1",
-    "sass": "^1.32.4",
-    "sass-loader": "^10.1.1",
-    "vue": "^2.6.12",
-    "vue-cli-plugin-vuetify": "^2.3.1",
-    "vue-template-compiler": "^2.6.12",
-    "vuetify-loader": "^1.7.2"
-  },
-  "engines": {
-    "node": ">= 8"
+    "test": "echo \"Error: run tests from root\" && exit 1"
   },
   "dependencies": {
-    "vuetify": "^2.5.0"
+    "n-ary-tree": "^0.4.0",
+    "sortablejs": "^1.10.2",
+    "vuetify": "^2.2.1"
   }
 }
