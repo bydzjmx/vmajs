@@ -88,4 +88,6 @@ export default {
 <style lang="sass" scoped>
 .v-cascader__list
   flex: 1
+.v-list-item__title
+  overflow: visible
 </style>
