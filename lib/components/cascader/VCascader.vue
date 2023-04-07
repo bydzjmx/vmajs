@@ -1,5 +1,5 @@
 <template>
-  <v-menu v-model="showMenu" :close-on-content-click="false" offset-y tile style="background-color: white">
+  <v-menu v-model="showMenu" :close-on-content-click="false" offset-y tile>
     <template #activator="{ on, attrs }">
       <v-text-field
         ref="text"
@@ -158,3 +158,8 @@ export default {
   },
 }
 </script>
+
+<style lang="sass" scoped>
+.v-menu__content
+  background-color: white
+</style>
