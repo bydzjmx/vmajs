@@ -1,6 +1,6 @@
 <template>
   <div class="v-cascader__item d-flex flex">
-    <v-list class="v-cascader__list d-flex flex pa-0" :dense="dense">
+    <v-list class="v-cascader__list d-flex flex pa-0" :dense="dense" :style="style">
       <v-list-item-group v-model="selectedItem" style="flex: 1 1 auto">
         <template v-for="item in items">
           <v-list-item :key="item.id" :value="item" @click="handleSelectItem(item)">
@@ -36,6 +36,10 @@ export default {
     multiple: Boolean,
     items: Array,
     selectedItems: Array,
+    style: {
+      type: String,
+      default: 'max-height: 50vh',
+    },
     childrenKey: {
       type: String,
       default: 'children',
